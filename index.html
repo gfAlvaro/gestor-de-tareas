@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Álvaro García Fuentes">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css" >
+        <title>Álvaro García Fuentes</title>
+    </head>
+    <body>
+        <header>
+            <h1>Práctica 11 Aplicación Gestor de Tareas</h1>
+        </header>
+        <div id="wrapper">
+            <main>
+                <article class="DIWEB">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>DIWEB</h3></div>
+                    <div class="titulo"><h2>Crear el mundo en seis días</h2></div>
+                    <div class="fechaEntrega"><p>Para ayer</p></div>
+                    <div class="descripcion">
+                        <p>Mátate a trabajar.
+                        Debes respetar la composición, la semántica y el buen gusto.
+                        Usa normalize, hazlo responsive y mobile-first.</p>
+                    </div>
+                </article>
+                <article class="DWEC">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>DWEC</h3></div>
+                    <div class="titulo"><h2>Juego 3D aventura de mundo abierto en js</h2></div>
+                    <div class="fechaEntrega"><p>Para anteayer</p></div>
+                    <div class="descripcion">
+                        <p>No debe estar protagonizado por un elfo verde,
+                        ni tener gráficos de hace 10 años, ni ralentizaciones.</p>
+                    </div>
+                </article>
+                <article class="DWES">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>DWES</h3></div>
+                    <div class="titulo"><h2>Base de datos PHP con el censo de España</h2></div>
+                    <div class="fechaEntrega"><p>Para dentro de una hora.</p></div>
+                    <div class="descripcion">
+                        <p>Usar como clave primaria la altura
+                             y el color de pelo, como clave foránea el peso.</p>
+                    </div>
+                </article>
+                <article class="HLC">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>HLC</h3></div>
+                    <div class="titulo"><h2>Base de datos JDBC con el censo de España</h2></div>
+                    <div class="fechaEntrega"><p>Sin fecha establecida.</p></div>
+                    <div class="descripcion"><p>No se debe copiar el trabajo de DWES, ya sea total o parcialmente.</p></div>
+                </article>
+                <article class="DAWEB">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>DAWEB</h3></div>
+                    <div class="titulo"><h2>Red de servidores de Google</h2></div>
+                    <div class="fechaEntrega"><p>Para 21/02/2022</p></div>
+                    <div class="descripcion">
+                        <p>No se tolera tomar drogas, 
+                            no se debe espiar a los usuarios para hacer listas de afinidades políticas.</p>
+                    </div>
+                </article>
+                <article class="EIE">
+                    <div class="botonera">
+                        <img src="img/editar.png" alt="editar">
+                        <img src="img/borrar.png" alt="borrar">
+                    </div>
+                    <div class="modulo"><h3>EIE</h3></div>
+                    <div class="titulo"><h2>Nóminas de todos los trabajadores de Coca-Cola</h2></div>
+                    <div class="fechaEntrega"><p>Para 30/02/2050</p></div>
+                    <div class="descripcion">
+                        <p>Guardar una parte en las Islas Caimán.
+                            Asegurarse de que Hacienda no te pille.</p>
+                    </div>
+                </article>
+            </main>
+            <aside>
+                <form id="nuevaTarea">
+                    <h2>Crear Nueva Tarea</h2>
+                    <label>Nombre de la tarea:<br><input id="nombre" type="text" required></label>
+                    <label>Módulo:<br><select name="modulo">
+                        <option value="DAWEB">DAWEB</option>
+                        <option value="DWEC">DWEC</option>
+                        <option value="DWES">DWES</option>
+                        <option value="DIWEB">DIWEB</option>
+                        <option value="EIE">EIE</option>
+                        <option value="HLC">HLC</option>
+                      </select></label>
+                    <label>Fecha de entrega:<br><input type="date"></label>
+                    <label>Descripción:<br><textarea id="descripcion" required></textarea></label>
+                    <button id="crear">Crear</button>
+                </form>
+            </aside>
+        </div>
+        <footer>
+            <p>Álvaro García Fuentes</p>
+        </footer>
+    </body>
+</html>
